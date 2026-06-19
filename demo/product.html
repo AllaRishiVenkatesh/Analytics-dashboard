@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nimbus Goods — Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">Nimbus Goods</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Three things<br />worth clicking.</h1>
+      <p>Add a few of these to your cart — each click is captured with its exact position so the heatmap view has something to show.</p>
+    </section>
+
+    <section class="product-grid">
+      <div class="product">
+        <div class="product-swatch"></div>
+        <div class="product-body">
+          <h4>Cloud Lamp</h4>
+          <p>Soft ambient lighting for a desk that does too much.</p>
+          <div class="product-price">$48</div>
+          <button class="btn btn-outline">Add to cart</button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-swatch"></div>
+        <div class="product-body">
+          <h4>Ridge Mug</h4>
+          <p>Stoneware, holds heat, survives the dishwasher.</p>
+          <div class="product-price">$22</div>
+          <button class="btn btn-outline">Add to cart</button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-swatch"></div>
+        <div class="product-body">
+          <h4>Field Notebook</h4>
+          <p>Dot grid, 160 pages, lies flat.</p>
+          <div class="product-price">$14</div>
+          <button class="btn btn-outline">Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>Demo storefront for the CausalFunnel analytics assignment.</footer>
+
+  <script src="/tracker/tracker.js" data-endpoint="http://localhost:4000/api/events"></script>
+</body>
+</html>

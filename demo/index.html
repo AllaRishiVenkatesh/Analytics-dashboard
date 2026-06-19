@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nimbus Goods — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">Nimbus Goods</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Lightweight tracking,<br />real user insight.</h1>
+      <p>
+        This storefront has the CFAnalytics tracker installed. Click anything
+        on this page, browse to the shop, then open the dashboard — every
+        page view and click shows up there as it happens.
+      </p>
+      <button class="btn btn-primary" id="cta">Get started</button>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Fast</h3>
+        <p>Events batch in memory and flush on an interval, plus immediately on tab close via sendBeacon.</p>
+      </div>
+      <div class="card">
+        <h3>Accurate</h3>
+        <p>Click coordinates are stored in pixels and as page-relative percentages for cross-device heatmaps.</p>
+      </div>
+      <div class="card">
+        <h3>Simple</h3>
+        <p>One script tag, zero config. Works on any static or server-rendered page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Demo storefront for the CausalFunnel analytics assignment.</footer>
+
+  <script src="/tracker/tracker.js" data-endpoint="http://localhost:4000/api/events"></script>
+</body>
+</html>
